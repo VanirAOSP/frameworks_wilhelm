@@ -190,10 +190,6 @@ LOCAL_SHARED_LIBRARIES :=         \
 LOCAL_MODULE := libwilhelm
 LOCAL_MODULE_TAGS := optional
 
-ifeq ($(TARGET_BUILD_VARIANT),userdebug)
-        LOCAL_CFLAGS += -DUSERDEBUG_BUILD=1
-endif
-
 LOCAL_PRELINK_MODULE := false
 include $(BUILD_SHARED_LIBRARY)
 
